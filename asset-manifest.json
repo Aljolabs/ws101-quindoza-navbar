@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/ws101-quindoza-navbar/static/css/main.672b2c90.css",
+    "main.js": "/ws101-quindoza-navbar/static/js/main.366dc020.js",
+    "static/media/Contact_vid2.mp4": "/ws101-quindoza-navbar/static/media/Contact_vid2.ac1ace6bf304fa1a524a.mp4",
+    "static/media/Guns N' Roses - Sweet Child O' Mine (Official Music Video).mp3": "/ws101-quindoza-navbar/static/media/Guns N' Roses - Sweet Child O' Mine (Official Music Video).9b4dbb73b2f77404e0c5.mp3",
+    "static/media/logo-bike3.png": "/ws101-quindoza-navbar/static/media/logo-bike3.fc8be43cecd269ed4840.png",
+    "static/media/model2.jfif": "/ws101-quindoza-navbar/static/media/model2.45ae9a3d83926fdb6d16.jfif",
+    "static/media/model1.jfif": "/ws101-quindoza-navbar/static/media/model1.88744015e9fb7ab19cd7.jfif",
+    "static/media/model3.jfif": "/ws101-quindoza-navbar/static/media/model3.dc5724cd4e12c6ab446a.jfif",
+    "static/media/group2.jfif": "/ws101-quindoza-navbar/static/media/group2.3350b8447cbe97821736.jfif",
+    "static/media/slick.svg": "/ws101-quindoza-navbar/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/ws101-quindoza-navbar/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/ws101-quindoza-navbar/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/ws101-quindoza-navbar/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/ws101-quindoza-navbar/index.html",
+    "main.672b2c90.css.map": "/ws101-quindoza-navbar/static/css/main.672b2c90.css.map",
+    "main.366dc020.js.map": "/ws101-quindoza-navbar/static/js/main.366dc020.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.672b2c90.css",
+    "static/js/main.366dc020.js"
+  ]
+}
