@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
-}
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.app-logo {
+  width: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  padding: 50px;
+  background-color: #0a0a0a;
+  position: relative; 
+  z-index: 2;
+}
+
+.logo {
+  position: absolute;
+  left: 20px; 
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center; 
+  gap: 30px; /* Space between each link */
+}
+
+.nav-links a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF4500;
+}
+
+.header-icons i {
+  margin-left: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.motorcycle-section {
+  max-width: 100%;
+  overflow: hidden; 
+}
+
+.motorcycle-image {
+  width: 100%;
+  height: auto;
+}
+
+.text-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.add-to-cart-btn {
+  background-color: #FF4500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #e03b00;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #0a0a0a;
+}
+
+/* Navigation Styles */
+.nav-links {
+  margin-left: 50px;
+}
+
+.images img {
+  margin: 1rem;
+  width: 300px;
+  height: auto;
+}
+
+/* About Page Styles */
+.about-page {
+  padding: 40px;
+  background-image: url('./Components/About/group2.jfif'); 
+  background-size: cover;
+  background-position: center;
+  color: white; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px); 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.about-page h1,
+.about-page h2,
+.about-page p {
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* carousel background */
+.background-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures the background is behind the content */
+  overflow: hidden;
+  opacity: 0.5; /* Adjust transparency */
+}
+
+.background-carousel img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensure the image covers the entire viewport */
+  filter: blur(1px); 
+  transform: scale(1.2); /* Zoom effect */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; 
+    padding: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-links {
+    margin-left: 0; 
+    flex-direction: column; 
+    gap: 10px; 
+  }
+
+  .text-section {
+    max-width: 100%; 
+    padding: 10px; 
+  }
+
+  h1 {
+    font-size: 32px; 
+  }
+
+  p {
+    font-size: 16px; 
+  }
+
+  .add-to-cart-btn {
+    font-size: 16px; 
+  }
+
+  .footer {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .app-logo {
+    width: 80px; 
+  }
+
+  h1 {
+    font-size: 24px; 
+  }
+
+  p {
+    font-size: 14px; 
+  }
+
+  .text-section {
+    padding: 5px; 
+  }
+
+  .form-wrapper {
+    width: 100%; 
+    padding: 10px; 
   }
 }
